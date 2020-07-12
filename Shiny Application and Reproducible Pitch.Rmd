@@ -1,0 +1,36 @@
+---
+title: "Course Project: Shiny Application and Reproducible Pitch"
+date: "12-July-2020"
+author: "Shubham singh"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Overview
+
+This presentation and the application was build for the course Developing Data Products as part of the Coursera Data Science Specializaion.
+
+The Shiny app developed for this assignment is available at: https://shubh6002.shinyapps.io/myapp/
+
+The source codes of ui.R and server.R are available on the GitHub repo: 
+https://github.com/shubh6002/Shiny-Application-and-Reproducible-Pitch
+
+## Dataset
+For this application, we used the mtcars dataset.
+```{r, echo=TRUE}
+summary(mtcars)
+```
+
+## Model
+
+We used lm to fit a multivariable regression; mpg as outcome, am, cyl, hp, and wt as predictors. The coefficients is shown below,
+
+```{r, echo = TRUE}
+lm(mpg ~ am + cyl + hp + wt, data = mtcars)
+```
+
+## THANK YOU
+
